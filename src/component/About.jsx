@@ -11,7 +11,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id = "about" className="bg-slate-50 py-16 px-6 md:px-12 lg:px-24 dark:bg-slate-900 transition-colors duration-300">
+    <section id = "about" className="  py-16 px-6 md:px-12 lg:px-24 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         

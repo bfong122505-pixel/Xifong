@@ -13,7 +13,7 @@ function HomeHero() {
     
 
     {/* Left side: Where the magic happens */}
-    <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-16 text-white z-2 items-center md:items-baseline">
+    <div className="w-full mb-5 md:mb-1 md:w-1/2 flex flex-col justify-center px-6 md:px-16 text-white z-2 items-center md:items-baseline">
         
         {/* Greeting */}
         <span >
@@ -30,7 +30,7 @@ function HomeHero() {
         {/* Your Name */}
          
         <TextType 
-  text={["Hi, I'm Sivfong", " Build modern for your websites", "Happy coding!"]}
+  text={["Hi, I'm Sivfong", " Build modern websites", "Happy coding!"]}
   typingSpeed={75}
   pauseDuration={1500}
   showCursor
@@ -46,8 +46,8 @@ function HomeHero() {
 />
 
         {/* Headline */}
-        <h1 className="text-xl md:text-5xl font-extrabold tracking-tight mb-4 leading-tight whitespace-nowrap md:whitespace-normal">
-            Building High Performance <span className="text-purple-500 shadow-sm">Web Experiences.</span>
+        <h1 className="text-[15px] md:text-5xl font-extrabold tracking-tight mb-4 leading-tight   md:whitespace-normal ">
+            Building High Performance  <span className="text-purple-500 shadow-sm">Web Experiences.</span>
         </h1>
  
         
@@ -59,8 +59,8 @@ function HomeHero() {
         
         {/* Call to Action Buttons */}
         <div className="flex items-center gap-4">
-            <a href="#projects" className=" cursor-target px-6 py-3 bg-purple-600 hover:bg-purple-700 font-medium rounded-lg transition duration-300 shadow-lg shadow-purple-600/30 text-center">
-                View My Work
+            <a href="#about" className=" cursor-target px-6 py-3 bg-purple-600 hover:bg-purple-700 font-medium rounded-lg transition duration-300 shadow-lg shadow-purple-600/30 text-center">
+            Personality
             </a>
              
             
