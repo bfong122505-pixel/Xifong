@@ -81,7 +81,7 @@ export default function AboutSection() {
             <ListAbout q = "Current Address"  a = "Phnom Penh , Cambodia" />
             <ListAbout q = "Education"  a = "Computer Science" />
             <ListAbout q = "High School Rank"  a = "Grade B" />
-            <ListAbout q = "Skills"  a = "Web Developer, Frotend developer" />
+            <ListAbout q = "Skills"  a = "Junior Full Stack Developer" />
            </div>
 
            
