@@ -17,20 +17,8 @@ function Experience() {
         />
       </div>
       <div>
-        {/* 1. The Scroll View Track */}
-        <ul
-          ref={scrollRef}
-          style={{
-            display: "flex",
-
-            scrollSnapType: "x mandatory",
-          }}
-        >
-          <li
-            style={{ flexShrink: 0, width: "100%", scrollSnapAlign: "start" }}
-            className="p-4"
-          >
-            <div className="w-full max-w-7xl mx-auto bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+        
+            <div className=" max-w-7xl mx-auto bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Visual / Image Container */}
                 <div className="  lg:col-span-6 bg-slate-100 dark:bg-slate-800/50 rounded-2xl p-6 flex items-center justify-center gap-4 relative overflow-hidden group">
@@ -107,18 +95,7 @@ function Experience() {
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            style={{ flexShrink: 0, width: "100%", scrollSnapAlign: "start" }}
-          >
-            Slide 2
-          </li>
-          <li
-            style={{ flexShrink: 0, width: "100%", scrollSnapAlign: "start" }}
-          >
-            Slide 3
-          </li>
-        </ul>
+          
       </div>
     </div>
   );
