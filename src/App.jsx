@@ -7,7 +7,7 @@ import AboutSection from './component/About'
 import TargetCursor from './component/Cursor';
 import ContactSection from './component/ContactPage'
 import ScrollReveal from './component/ScrollReveal' // IMPORT THE WRAPPER
-
+import Experience from "./component/Experience";
 function App() {
   return (
     <div className="h-full w-full bg-[#120F17]">
@@ -32,6 +32,9 @@ function App() {
         <SlideCodeLanguage className="relative m-1" />
       </ScrollReveal>
       
+      <ScrollReveal>
+        <Experience />
+      </ScrollReveal>
       {/* --- APPLIED TO ABOUT SECTION --- */}
       <ScrollReveal distance="50px" duration="900ms">
         <AboutSection />
