@@ -6,9 +6,38 @@ import ListAbout from "./ListAbout";
 export default function AboutSection() {
   // Categorized tech stack for quick scanning
   const skills = [
-    { category: "Frontend", items: ["React", "JavaScript (ES6+)", "Tailwind CSS", "HTML5/CSS3" , "Bootstrap 5"] },
-    { category: "Design & Tools", items: ["Figma", "Git/GitHub", "VS Code", "Responsive Design"] },
-  ];
+    {
+    category: "Frontend",
+    items: [
+    "React",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "HTML5/CSS3",
+    "Bootstrap 5",
+    "Responsive Design",
+    ],
+    },
+    {
+    category: "Backend",
+    items: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "REST API",
+    "Python",
+    ],
+    },
+    {
+    category: "Tools & Development",
+    items: [
+    "Git/GitHub",
+    "Figma",
+    "VS Code",
+    "Postman",
+    ],
+    },
+    ];
 
   return (
     <section id = "about" className="  py-16 px-6 md:px-12 lg:px-24 bg-slate-900 text-slate-100  duration-300">
