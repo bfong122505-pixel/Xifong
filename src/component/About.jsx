@@ -9,12 +9,13 @@ export default function AboutSection() {
     {
     category: "Frontend",
     items: [
-    "React",
+    "React.js",
     "JavaScript (ES6+)",
     "Tailwind CSS",
     "HTML5/CSS3",
     "Bootstrap 5",
     "Responsive Design",
+    "Next.js"
     ],
     },
     {
