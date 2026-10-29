@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @import "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
-@plugin "flowbite/plugin";
 @source "../node_modules/flowbite-react/dist/esm/**/*.js";
- 
+@plugin "flowbite/plugin";
+@plugin "daisyui";
 
 @theme {
   --animate-load-down: loadDown 4s ease-in-out infinite;
@@ -11,16 +11,17 @@
   @keyframes loadDown {
     0% {
       transform: translateY(0);
-      
-    } 50%{
-        transform: translateY(50%);
+    }
+    50% {
+      transform: translateY(50%);
     }
     100% {
       transform: translateY(0);
-      
     }
   }
-  --animate-slide-infinite : slide 15s linear infinite ;
+
+  --animate-slide-infinite: slide 15s linear infinite;
+
   @keyframes slide {
     0% {
       transform: translateX(0);
@@ -29,5 +30,4 @@
       transform: translateX(-50%);
     }
   }
- 
 }

@@ -1,17 +1,19 @@
-import './App.css'
-import Header from './component/header'
-import Lightning from './GlitchText';
-import HomeHero from './component/homeHero'
-import SlideCodeLanguage from "./component/slideCodeLanguage";
-import AboutSection from './component/About'
-import TargetCursor from './component/Cursor';
-import ContactSection from './component/ContactPage'
-import ScrollReveal from './component/ScrollReveal' // IMPORT THE WRAPPER
-import Experience from "./component/Experience";
-function App() {
+import {
+  TargetCursor,
+  LightningCanvas,
+  ScrollReveal,
+  Header,
+  Footer,
+  HeroSection,
+  TechSlider,
+  ExperienceSection,
+  AboutSection,
+  ContactSection
+} from './components';
+
+export default function App() {
   return (
     <div className="h-full w-full bg-[#120F17]">
-      
       <TargetCursor 
         spinDuration={2}
         hideDefaultCursor
@@ -23,24 +25,26 @@ function App() {
       
       {/* Hero Section */}
       <div className="w-full relative h-210 md:h-180 bg-[#120F17] z-10 overflow-hidden">
-        <HomeHero className="z-1" />
-        <Lightning hue={260} xOffset={0} speed={1} intensity={1} size={1} className="z-20" />
+        <HeroSection className="z-1" />
+        <LightningCanvas hue={260} xOffset={0} speed={1} intensity={1} size={1} className="z-20" />
       </div>
 
-      {/* --- APPLIED TO SLIDER --- */}
+      {/* Tech Stack Infinite Slider */}
       <ScrollReveal distance="20px" duration="600ms">
-        <SlideCodeLanguage className="relative m-1" />
+        <TechSlider className="relative m-1" />
       </ScrollReveal>
       
+      {/* Experience & Projects Showcase */}
       <ScrollReveal>
-        <Experience />
+        <ExperienceSection />
       </ScrollReveal>
-      {/* --- APPLIED TO ABOUT SECTION --- */}
+
+      {/* About Section */}
       <ScrollReveal distance="50px" duration="900ms">
         <AboutSection />
       </ScrollReveal>
 
-      {/* --- APPLIED TO CONTACT SECTION --- */}
+      {/* Contact Section */}
       <ScrollReveal distance="60px" duration="1000ms" delay="100ms">
         <div className="h-fit w-full">
           <ContactSection />
@@ -48,13 +52,7 @@ function App() {
       </ScrollReveal>
 
       {/* Footer */}
-      <hr className="border-neutral-900" />
-      <div className="text-center p-5 bg-[#0a0710] text-sm text-neutral-500 font-medium">
-        © 2026 Chum Sivfong. All rights reserved.
-      </div>
-      
+      <Footer />
     </div>
-  )
+  );
 }
-
-export default App
