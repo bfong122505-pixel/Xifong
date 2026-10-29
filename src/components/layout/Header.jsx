@@ -3,7 +3,7 @@ import { navigationData } from "../../data/navigation";
 
 export const Header = ({ className = "" }) => {
   const [open, setOpen] = useState(false);
-  const { brand, navLinks } = navigationData;
+  const { brand, logo, navLinks } = navigationData;
 
   const handleLinkClick = () => {
     setOpen(false);
@@ -13,8 +13,15 @@ export const Header = ({ className = "" }) => {
     <nav className={`border-b border-neutral-800/80 backdrop-blur-md text-white fixed top-0 right-0 left-0 z-[100] ${className}`}>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
-        <a href="#home" className="text-xl font-bold cursor-target tracking-wider">
-          {brand}
+        <a href="#home" className="flex items-center gap-2.5 cursor-target group">
+          <img
+            src={logo || "/images/fong-icon.png"}
+            alt={brand}
+            className="w-8 h-8 rounded-lg object-contain transition-transform duration-300 group-hover:scale-105"
+          />
+          <span className="text-xl font-bold tracking-wider group-hover:text-purple-400 transition-colors">
+            {brand}
+          </span>
         </a>
 
         {/* Desktop Menu */}
