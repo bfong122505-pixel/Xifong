@@ -27,10 +27,12 @@ export const personalInfoData = {
         "Next.js",
         "React.js",
         "JavaScript (ES6+)",
+        "TypeScript",
         "Tailwind CSS",
         "HTML5/CSS3",
         "Bootstrap 5",
         "Responsive Design"
+
       ]
     },
     {
@@ -51,7 +53,8 @@ export const personalInfoData = {
         "Git/GitHub",
         "Figma",
         "VS Code",
-        "Postman"
+        "Postman",
+        "Docker"
       ]
     }
   ]
